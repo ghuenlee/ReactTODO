@@ -1,9 +1,10 @@
-# React Boilerplate 1.0.0
- A simple react boilerplate!
+# ReactTODO 0.0.1
+ A simple react TODO app!
  
 ### What is this ?
 
-This is an extremely simple react boilerplate, built with the following modules:
+This is an extremely simple react todo app, that uses the browser's localStorage to store and fetch todos.
+Built with the following modules:
 
   - NodeJS
   - ExpressJS
@@ -38,4 +39,3 @@ Done! just open your brower and head to localhost:3000. Voila!
 
 **Windows users**, follow the same steps, though use  ``` $ npm install ``` instead of ``` $ sudo npm install ```.
 
-# ReactTODO
