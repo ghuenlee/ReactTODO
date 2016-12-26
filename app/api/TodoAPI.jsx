@@ -41,10 +41,32 @@ module.exports = {
 
             return !todo.completed || showCompleted;
         });
+
         // Filter by searchText
 
+        filteredTodos = filteredTodos.filter((todo) => {
+            if (searchText.length > 0) {
+                var todoText = (todo.text).toLowerCase();
+                if (todoText.indexOf(searchText) > -1) {
+                    // indexOf returns a value equal or superior to 0 if the text was found,
+                    // Else, it returns -1 if nothing is found.
+                    return todo;
+                }
+            } else {
+                return todo;
+            }
+        });
         // Sort todos
 
+        filteredTodos.sort((a, b) => {
+            if (a.completed && !b.completed) {
+                return 1;
+            } else if (!a.completed && b.completed) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
         return filteredTodos;
     }
 };
