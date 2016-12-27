@@ -1,4 +1,5 @@
 @import "base/variables";
+@import "base/animations";
 // Foundation
 // Confusing, right ? :3 it shouldn't be. the reason why
 // app.scss is able to import these files is because 
@@ -9,3 +10,7 @@
 @import "foundation";
 @include foundation-everything;
 // Imports
+@import "components/page-title";
+@import "components/container";
+@import "components/todo";
+@import "components/todo-list"

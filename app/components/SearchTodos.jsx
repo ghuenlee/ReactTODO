@@ -10,7 +10,7 @@ var SearchTodos = React.createClass({
 
     render: function () {
         return (
-            <div>
+            <div className="container__header">
                 <div>
                     <input type="search" ref="searchText" placeholder="Type in search query..." onChange={this.handleChange} />
                 </div>
